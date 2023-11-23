@@ -125,6 +125,11 @@ class MainActivity : AppCompatActivity() {
                     var intent = Intent(applicationContext, FavoriteNews::class.java)
                     startActivity(intent)
                 }
+                R.id.signout->{
+                    var intent = Intent(applicationContext, LoginPage::class.java)
+                    startActivity(intent)
+                }
+
             }
             true
         }

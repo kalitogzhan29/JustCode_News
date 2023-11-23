@@ -71,7 +71,7 @@ class ItemDetails : AppCompatActivity() {
     private fun createPage() {
         binding.titleDet.text = bundle!!.getString("title")
         binding.descriptionDet.text = bundle!!.getString("description")
-        binding.content.text = bundle!!.getString("content")
+//        binding.content.text = bundle!!.getString("content")
 
         val img = binding.imageView3
         val url = bundle!!.getString("imgUrl")

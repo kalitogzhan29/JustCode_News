@@ -40,7 +40,23 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="false">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoginPage"
+            android:exported="false">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SignUpPage"
+            android:exported="false">
 
             <meta-data
                 android:name="android.app.lib_name"
