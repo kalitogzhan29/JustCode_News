@@ -13,20 +13,20 @@ import com.example.tengrinews.Database.MainDb
 import com.example.tengrinews.databinding.ActivityLogInBinding
 
 class LoginPage : AppCompatActivity(){
-    @SuppressLint("MissingInflatedId")
+
     lateinit var binding: ActivityLogInBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding=ActivityLogInBinding.inflate(layoutInflater)
 
-        setContentView(binding.root)
+       setContentView(binding.root)
 
-
-        binding.signUpText.setOnClickListener {
+       binding.signUpText.setOnClickListener {
             val intent = Intent(this, SignUpPage::class.java)
-            startActivity(intent)
-        }
-//        mydb= Room.databaseBuilder(this,Maindb.class,"users")
+           startActivity(intent)
+       }
+
         val db = MainDb.getDb(this)
         binding.login1.setOnClickListener {
             val logEmail = findViewById<EditText>(R.id.emaillog).text.toString()
@@ -59,7 +59,7 @@ class LoginPage : AppCompatActivity(){
                 Toast.makeText(this, "Empty email or password is not allowed", Toast.LENGTH_SHORT)
                     .show()
             }
-        }
+       }
 
 
     }

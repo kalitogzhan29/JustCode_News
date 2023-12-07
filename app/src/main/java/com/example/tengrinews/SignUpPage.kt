@@ -11,7 +11,7 @@ import com.example.tengrinews.databinding.ActivitySignUpBinding
 
 class SignUpPage: AppCompatActivity()  {
     lateinit var binding: ActivitySignUpBinding
-    @SuppressLint("MissingInflatedId")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivitySignUpBinding.inflate(layoutInflater)
@@ -38,9 +38,8 @@ class SignUpPage: AppCompatActivity()  {
 
         }
 
-
         binding.logInText.setOnClickListener{
-            val intent= Intent(this, MainActivity::class.java)
+            val intent= Intent(this, LoginPage::class.java)
             startActivity(intent)
         }
     }

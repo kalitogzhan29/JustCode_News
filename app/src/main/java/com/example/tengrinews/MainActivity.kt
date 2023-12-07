@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
@@ -33,6 +34,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         drawerLayout = findViewById(R.id.drawer)
+
+
+
 
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
         drawerLayout.addDrawerListener(toggle)
@@ -108,6 +112,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
     private fun initRecyclerView() {
         var recyclerView  = binding.recyclerView
 
@@ -125,10 +130,12 @@ class MainActivity : AppCompatActivity() {
                     var intent = Intent(applicationContext, FavoriteNews::class.java)
                     startActivity(intent)
                 }
-                R.id.signout->{
+
+                R.id.nav_signout -> {
                     var intent = Intent(applicationContext, LoginPage::class.java)
                     startActivity(intent)
                 }
+
 
             }
             true

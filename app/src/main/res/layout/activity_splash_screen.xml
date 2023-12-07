@@ -8,6 +8,7 @@
     tools:context=".SplashScreen">
 
     <ImageView
+        android:id="@+id/photo"
         android:layout_width="374dp"
         android:layout_height="407dp"
         android:src="@drawable/splash_tengri"

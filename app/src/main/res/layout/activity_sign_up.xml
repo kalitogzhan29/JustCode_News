@@ -16,6 +16,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginLeft="125dp"
+            android:layout_marginBottom="20dp"
             android:layout_marginTop="30dp"
             app:srcCompat="@drawable/logo_tengri"
 
@@ -26,13 +27,11 @@
             android:id="@+id/emailsign"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_bg"
             android:hint="Type email"
             android:padding="12dp"
             android:textColor="#2C2A2A"
-
             android:textColorHint="#DDDD" />
 
         <EditText
@@ -44,7 +43,6 @@
             android:hint="Type password"
             android:inputType="textPassword"
             android:padding="12dp"
-
             android:textColorHint="#DDDD" />
 
 
@@ -55,7 +53,6 @@
             android:layout_marginBottom="20dp"
             android:background="@color/purple_500"
             android:textColor="@color/white"
-
             android:padding="16dp"
             android:text="Sign up"
             android:textAllCaps="false" />
